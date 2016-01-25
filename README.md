@@ -3,6 +3,18 @@ Kafka @ Hortonworks Data Platform
 
 An Ansible Role that installs Kafka from the Hortonworks Data Platform.  
 
+Add to your playbooks requirements.yml:
+
+```
+- src: https://github.com/nickwallen/ansible-hdp-kafka
+```
+
+and then run:
+
+```
+ansible-galaxy install -r requirements.yml --ignore-errors
+```
+
 Requirements
 ------------
 
@@ -20,11 +32,9 @@ None.
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
     - hosts: kafka*
       roles:
-         - { role: hdp-kafka, x: 42 }
+         - { role: ansible-hdp-kafka, x: 42 }
 
 License
 -------

@@ -1,9 +1,12 @@
 Kafka @ Hortonworks Data Platform
 =================================
 
-An Ansible Role that installs Kafka from the Hortonworks Data Platform.  
+An Ansible Role that installs a single-node Kafka broker from the Hortonworks Data Platform distribution.  Zookeeper is also installed to support the Kafka broker.  
 
-Add to your playbooks requirements.yml:
+Getting Started
+---------------
+
+Add to your playbook's requirements.yml:
 
 ```
 - src: https://github.com/nickwallen/ansible-hdp-kafka

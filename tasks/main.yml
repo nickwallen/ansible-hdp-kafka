@@ -9,7 +9,7 @@
     mode: 0644
 
 - name: Install kafka
-  yum: name={{item}} state=latest update_cache=no
+  yum: name={{item}}
   with_items:
     - java-1.8.0-openjdk
     - kafka

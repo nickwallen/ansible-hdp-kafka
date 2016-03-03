@@ -15,6 +15,9 @@
     - kafka
     - zookeeper-server
 
+- name: Create pid directory
+  shell: mkdir -p /var/run/kafka
+
 - name: Start zookeeper
   shell: /usr/hdp/current/zookeeper-server/bin/zookeeper-server start
 
